@@ -1,0 +1,7 @@
+zapytanie 1: SELECT id, dataWyjazdu, cel, cena FROM wycieczki WHERE wycieczki.dostepna = TRUE;
+
+zapytanie2: SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis ASC;
+
+zapytanie3: SELECT zdjecia.nazwaPliku, wycieczki.cel FROM zdjecia, wycieczki WHERE wycieczki.cena>1000 AND wycieczki.zdjecia_id = zdjecia.id;
+
+zapytanie 4: ALTER TABLE `wycieczki` ADD `dataPrzyjazdu` DATE NULL DEFAULT NULL AFTER `dataWyjazdu`; 

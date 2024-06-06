@@ -1,0 +1,21 @@
+Zapytanie 1: wybierające z tabeli Klienci posortowane malejąco według punktów jedynie imię, 
+nazwisko i punkty trzech klientów, których liczba punktów jest najwyższa
+
+kw1: SELECT imie, nazwisko, punkty FROM `klienci` ORDER BY punkty DESC LIMIT 3;
+
+
+Zapytanie 2: wybierające nazwę z tabeli Typy oraz liczbę klientów przypisanych do każdego typu. 
+Należy posłużyć się relacją
+
+SELECT typy.nazwa,
+		COUNT(klieci.id) AS ''
+
+FROM `typy`
+WHERE
+
+Zapytanie 3: wybierające jedynie pola zdjecie, imie z tabeli Klienci oraz odpowiadające im pole 
+opinia z tabeli opinie dla klientów, których typ ma id o wartościach 2, 3. Należy posłużyć się relacją
+
+
+Zapytanie 4: dodające do tabeli Klienci kolumnę o nazwie adres i typie napisowym, maksymalnie 
+50-znakowy

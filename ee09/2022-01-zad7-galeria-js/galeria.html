@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <header><h2>Galeria miejsc ciekawych</h2></header>
+    <main><img id="main-img" src="./lanzarotte.jpg" alt="galeria"></main>
+    <div class="flex">
+        <div class="lewy">
+            <h3>Przeglądaj zdjęcia</h3>
+            <img onclick="imgChange('./lanzarotte.jpg')" src="./lanzarotte.jpg" alt="lanzarotte">
+            <img onclick="imgChange('./pekin.jpg')" src="./pekin.jpg" alt="pekin">
+            <img onclick="imgChange('./serengeti.jpg')" src="./serengeti.jpg" alt="serengeti">
+            <img onclick="imgChange('./wenecja.jpg')" src="./wenecja.jpg" alt="wenecja">
+            <img onclick="imgChange('./tajlandia.jpg')" src="./tajlandia.jpg" alt="tajlandia">
+        </div>
+        <div class="prawy">
+            <h3>Obrazy w naszej galerii</h3>
+            <table>
+                <tr>
+                    <td>Europa</td>
+                    <td>Azja</td>
+                    <td>Afryka</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <p>Polub nas<img id="heart" onclick="iconChange()" src="./icon-off.png" alt="icon-off"></p>
+            <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+        </div>
+    </div>
+    <footer>
+        <p>Autor: pt21lipiecw</p>
+    </footer>
+</body>
+</html>
+<script>
+    function iconChange() {
+        if(document.getElementById("heart").attributes.src.nodeValue == "./icon-off.png") {
+            document.getElementById("heart").attributes.src.nodeValue = "./icon-on.png"
+        } else {
+            document.getElementById("heart").attributes.src.nodeValue = "./icon-off.png"
+        }
+    }
+    function imgChange(src) {
+        document.getElementById("main-img").attributes.src.nodeValue = src
+    }
+</script>

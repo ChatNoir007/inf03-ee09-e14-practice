@@ -1,0 +1,4 @@
+kw1: SELECT zespol1, zespol23, wynik, data_rozgrywki FROM rozgrywka WHERE zespol1="EVG";
+kw2: SELECT imie, nazwisko FROM WHERE pozycja_id=3;
+kw3: SELECT zawodnik.id, zawodnik.nazwisko, pozycja.nazwa FROM zawodnik, pozycja WHERE zawodnik.pozycja_id AND pozycja.id IN(1,2,3);
+kw4: DROP TABLE `egzamin`.`liga`;

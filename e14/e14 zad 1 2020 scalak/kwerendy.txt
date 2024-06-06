@@ -1,0 +1,11 @@
+kwerenda1:
+SELECT id, nazwa, opis, cena FROM podzespoly WHERE cena < 1000;
+
+kwerenda2:
+SELECT podzespoly.nazwa, podzespoly.opis FROM podzespoly, producenci WHERE podzespoly.dostepnosc = 1 AND podzespoly.producenci_id = producenci.id AND producenci.nazwa="Intel";
+
+kwerenda3:
+SELECT podzespoly.nazwa, producenci.nazwa FROM podzespoly, producenci WHERE podzespoly.producenci_id = producenci.id;
+
+kwerenda4:
+UPDATE producenci SET nazwa = 'PATRIOT' WHERE producenci.nazwa = "Patriot";
